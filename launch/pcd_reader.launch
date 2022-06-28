@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <arg name="path" default="~/test.pcd" />
+  <node pkg="pcd_reader" type="pcd_reader" name="pcd_reader" args="$(arg path)" />
+</launch>
