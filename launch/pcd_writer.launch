@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node pkg="rosbag" type="play" name="play_bag" args="/home/liubo/personal/ROSbag/wzq_2022-09-21-15-01-09_34.bag"/>
+  <node pkg="pcd_reader" type="pcd_reader_writer" name="pcd_writer" output="screen"/>
+</launch>

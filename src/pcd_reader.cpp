@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
   ros::NodeHandle nh;
   ros::Publisher pcl_pub =
       nh.advertise<sensor_msgs::PointCloud2>("point_raw", 1);
-  pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
+  pcl::PointCloud<pcl::PointXYZI>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZI>);
   pcl::PCDReader reader;
   if (not reader.read(argv[1], *cloud)) ROS_INFO("reading %s", argv[1]);
 
